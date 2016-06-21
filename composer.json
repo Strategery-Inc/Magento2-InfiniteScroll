@@ -1,0 +1,23 @@
+{
+  "name": "strategery/infinitescroll",
+  "description": "Strategery InfiniteScroll 2 - Magento 2 Module",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/framework": "100.0.*",
+    "magento/module-ui": "100.0.*",
+    "magento/module-config": "100.0.*",
+    "magento/module-contact": "100.0.*"
+  },
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Strategery\\Infinitescroll\\": ""
+    }
+  }
+}
