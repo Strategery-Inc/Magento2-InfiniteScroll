@@ -135,14 +135,6 @@
                     <comment>This feature automatically uploads the browser URL with the location of the page the user is watching. This allows users to use the "Back" browser button after viewing a product to return directly to the page where they left off.</comment>
                 </field>
             </group>
-            <group id="advanced" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Advanced</label>
-                <field id="ias_config" translate="label" type="text" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1">
-                    <label>Custom IAS Config</label>
-                    <comment>Path to custom js file relative to the skin path. This js file must declare: window.ias_config = { /* your custom settings for IAS here */ };. For details about the custom options see: https://github.com/webcreate/infinite-ajax-scroll</comment>
-                    <tooltip>Example: js/ias_config.js</tooltip>
-                </field>
-            </group>
         </section>
     </system>
 </config>

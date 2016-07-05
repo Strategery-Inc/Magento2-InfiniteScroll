@@ -18,9 +18,7 @@
 	<?php
 	$productListMode = $this->getProductListMode();
 	?>
-	<?php if($iasConfig = $this->getScrollConfig('advanced/ias_config')) :?>
-		<script src="<?php echo $this->getViewFileUrl('Strategery_Infinitescroll::js/'.$iasConfig) ?>"></script>
-	<?php endif ?>
+	<script src="<?php echo $this->getViewFileUrl('Strategery_Infinitescroll::js/ias_config.js') ?>"></script>
 <script type="text/javascript">
 //<![CDATA[
 	windowLoadedFlag = false;
