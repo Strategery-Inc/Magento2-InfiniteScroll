@@ -37,7 +37,7 @@
             <group id="instances" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Instances</label>
                 <field id="grid" translate="label" type="select" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1">
-                    <label>Use in Grid mode</label>
+                    <label>Use in Grid</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <field id="layer" translate="label" type="select" sortOrder="2" showInDefault="1" showInStore="1" showInWebsite="1">
