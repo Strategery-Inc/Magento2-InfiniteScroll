@@ -6,7 +6,12 @@ This extension is for when the user reaches the end of the current product list,
 Useful for quickly grabbing development copy.
 
 1. Add a requirement:
-    `"strategery-inc/magento2-infinitescroll": "dev-master"`
+    `"strategery/infinitescroll": "dev-master"`
+2. Add the repository:
+    `{
+        "type": "vcs",
+	    "url": "https://github.com/Strategery-Inc/Magento2-InfiniteScroll/"
+    }`
 2. Run `composer update` to install.
 
 ### Useful Links
