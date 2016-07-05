@@ -37,11 +37,11 @@
             <group id="instances" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Instances</label>
                 <field id="grid" translate="label" type="select" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1">
-                    <label>Use in Grid</label>
+                    <label>Use in Grid/List mode</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <field id="layer" translate="label" type="select" sortOrder="2" showInDefault="1" showInStore="1" showInWebsite="1">
-                    <label>Use in List</label>
+                    <label>Use in Layer mode</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <field id="search" translate="label" type="select" sortOrder="3" showInDefault="1" showInStore="1" showInWebsite="1">
@@ -104,11 +104,6 @@
                 <field id="hide_toolbar" translate="label" type="select" sortOrder="5" showInDefault="1" showInStore="1" showInWebsite="1">
                     <label>Hide Toolbar</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>
-                <field id="advanced" translate="label" type="select" sortOrder="6" showInDefault="1" showInStore="1" showInWebsite="1">
-                    <label>Use in Advanced Search</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment>Make sure you have the right css selector for the toolbar</comment>
                 </field>
                 <field id="local_mode" translate="label" type="select" sortOrder="7" showInDefault="1" showInStore="1" showInWebsite="1">
                     <label>Local Mode</label>
