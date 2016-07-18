@@ -22,6 +22,13 @@ class Init extends \Magento\Framework\View\Element\Template
 	protected $catalogSession;
 	protected $registry;
 
+    /**
+     * Init constructor.
+     * @param \Magento\Framework\View\Element\Template\Context $context
+     * @param \Magento\Catalog\Model\Session $catalogSession
+     * @param \Magento\Framework\Registry $registry
+     * @param array $data
+     */
 	public function __construct(
 		\Magento\Framework\View\Element\Template\Context $context,
 		\Magento\Catalog\Model\Session $catalogSession,
@@ -34,11 +41,19 @@ class Init extends \Magento\Framework\View\Element\Template
 		parent::__construct($context, $data);
 	}
 
+    /**
+     * @param $fullPath
+     * @return mixed
+     */
 	public function getConfig($fullPath)
 	{
 		return $this->scopeConfig->getValue($fullPath, \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 	}
 
+    /**
+     * @param $node
+     * @return mixed
+     */
 	public function getScrollConfig($node)
 	{
 		return $this->getConfig('strategery_infinitescroll/' . $node);
@@ -50,16 +65,25 @@ class Init extends \Magento\Framework\View\Element\Template
 		return $enabled;
 	}
 
+    /**
+     * @return mixed
+     */
 	public function isMemoryActive()
 	{
 		return $this->getScrollConfig('memory/enabled');
 	}
 
+    /**
+     * @return mixed
+     */
 	public function getNextPageNumber()
 	{
 		return $this->getRequest()->getParam('p');
 	}
 
+    /**
+     * @return string
+     */
 	public function getCurrentPageType()
 	{
 		$where = 'grid';
@@ -76,6 +100,9 @@ class Init extends \Magento\Framework\View\Element\Template
 		return $where;
 	}
 
+    /**
+     * @return mixed
+     */
 	public function getCurrentCategory()
 	{
 		return $this->registry->registry('current_category');
