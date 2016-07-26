@@ -11,15 +11,11 @@
  * @copyright  Copyright (c) 2016 Strategery Inc. (http://www.strategery.io/)
  * @author     Damian A. Pastorini (damian.pastorini@dwdeveloper.com)
  */
-
-// IAS config:
-window.ias_config = {
-    // options from https://github.com/webcreate/infinite-ajax-scroll
+var config = {
+    map: {
+        '*': {
+            infinitescroll: 'Strategery_Infinitescroll/js/infinitescroll',
+            jqueryIas: 'Strategery_Infinitescroll/js/jquery-ias.min'
+        }
+    }
 };
-
-// IS Custom Event to Hook into:
-/*
-jQuery(document).on('infiniteScrollReady', function(){
-    console.log('bam!');
-});
-*/

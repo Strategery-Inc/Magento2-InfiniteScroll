@@ -17,7 +17,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block class="Strategery\Infinitescroll\Block\Init" name="infinitescroll.init" template="Strategery_Infinitescroll::init.phtml"/>
+            <block class="Strategery\Infinitescroll\Block\Init" name="infinitescroll.init" template="Strategery_Infinitescroll::js.phtml"/>
         </referenceContainer>
     </body>
 </page>

@@ -21,14 +21,6 @@ Useful for quickly grabbing development copy.
 </tr>
 </table>
 
-### Development Notes
-To hook to window.ias you need to listen the window.onload event:
-
-`jQuery(window).load(function() {
-    console.log('window load jquery');
-    console.log(window.ias);
-});`
-
 ------------------
 ### Release Notes
 ##### v1.0.0
