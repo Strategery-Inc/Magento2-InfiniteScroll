@@ -55,9 +55,6 @@
             <memory>
                 <enabled>1</enabled>
             </memory>
-            <advanced>
-                <ias_config>ias_config.js</ias_config>
-            </advanced>
         </strategery_infinitescroll>
     </default>
 </config>

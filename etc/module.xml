@@ -15,7 +15,7 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:magento/framework/Module/etc/module.xsd">
-    <module name="Strategery_Infinitescroll" setup_version="1.0.0"/>
+    <module name="Strategery_Infinitescroll" setup_version="0.2.0"/>
     <sequence>
         <module name="Magento_Catalog"/>
     </sequence>
