@@ -19,7 +19,7 @@ class Init extends \Magento\Framework\View\Element\Template
 {
 
     protected $scopeConfig;
-	protected $catalogSession;
+    protected $catalogSession;
     protected $registry;
 
     /**
