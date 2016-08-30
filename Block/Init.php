@@ -103,12 +103,12 @@ class Init extends \Magento\Framework\View\Element\Template
 		$currentCategory = $this->getCurrentCategory();
 		if ($currentCategory) {
 			$where = "grid";
-			if($currentCategory->getIsAnchor()){
+			if($currentCategory->getIsAnchor()) {
 				$where = "layer";
 			}
 		}
 		$controller = $this->getRequest()->getControllerName();
-		if ( $controller == "result"){
+		if ( $controller == "result") {
 		    $where = "search";
 		} else if ( $controller == "advanced") {
 		    $where = "advanced";
@@ -155,7 +155,7 @@ class Init extends \Magento\Framework\View\Element\Template
         $paramProductListMode = $this->getRequest()->getParam('product_list_mode');
         $currentMode = $paramProductListMode ? $paramProductListMode : $this->catalogSession->getDisplayMode();
         if ($currentMode) {
-			switch($currentMode){
+			switch($currentMode) {
 				case 'list':
 					$productListMode = 'list';
 					break;
@@ -165,7 +165,7 @@ class Init extends \Magento\Framework\View\Element\Template
 			}
 		} else {
 			$defaultMode = $this->getConfig('catalog/frontend/list_mode');
-			switch($defaultMode){
+			switch($defaultMode) {
 				case 'grid-list':
 					$productListMode = 'grid';
 					break;
