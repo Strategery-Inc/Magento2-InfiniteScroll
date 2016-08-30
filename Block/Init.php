@@ -70,6 +70,15 @@ class Init extends \Magento\Framework\View\Element\Template
     }
 
     /**
+     * @param $design
+     * @return string
+     */
+    public function getDesign($design)
+    {
+        return $this->getScrollConfig('design/'.$design);
+    }
+
+    /**
      * @return mixed
      */
     public function isEnabled()
