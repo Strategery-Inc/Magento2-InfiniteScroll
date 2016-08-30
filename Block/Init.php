@@ -124,19 +124,19 @@ class Init extends \Magento\Framework\View\Element\Template
         return $this->registry->registry('current_category');
     }
 
-	/**
-	 * check general and instance enable
-	 * @return bool
-	 */
+    /**
+     * check general and instance enable
+     * @return bool
+     */
     public function isEnabledInCurrentPage()
     {
         $pageType = $this->getCurrentPageType();
         return $this->getScrollConfig('instances/'.$pageType);
     }
 
-	/**
-	 * @return bool|false
-	 */
+    /**
+     * @return bool|false
+     */
     public function getLoaderImage()
     {
         $url = $this->getScrollConfig('design/loading_img');
@@ -146,9 +146,9 @@ class Init extends \Magento\Framework\View\Element\Template
         return empty($url) ? false : $url;
     }
 
-	/**
-	 * @return string
-	 */
+    /**
+     * @return string
+     */
     public function getProductListMode()
     {
         // user mode
