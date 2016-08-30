@@ -18,9 +18,9 @@ namespace Strategery\Infinitescroll\Block;
 class Init extends \Magento\Framework\View\Element\Template
 {
 
-	protected $scopeConfig;
+    protected $scopeConfig;
 	protected $catalogSession;
-	protected $registry;
+    protected $registry;
 
     /**
      * Init constructor.
