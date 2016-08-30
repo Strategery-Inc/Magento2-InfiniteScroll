@@ -21,7 +21,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Strategery_Infinitescroll::config" title="Strategery InfiniteScroll Config" sortOrder="50" />
+                            <resource id="Strategery_Infinitescroll::config" title="Strategery InfiniteScroll Config" sortOrder="50"/>
                         </resource>
                     </resource>
                 </resource>

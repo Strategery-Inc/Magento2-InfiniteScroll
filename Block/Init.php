@@ -8,9 +8,9 @@
  * available through the world-wide-web at this URL:
  * http://opensource.org/licenses/afl-3.0.php
  *
- * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
- * @copyright  Copyright (c) 2016 Strategery Inc. (http://www.strategery.io/)
- * @author     Damian A. Pastorini (damian.pastorini@dwdeveloper.com)
+ * @license http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @copyright Copyright (c) 2016 Strategery Inc. (http://www.strategery.io/)
+ * @author Damian A. Pastorini (damian.pastorini@dwdeveloper.com)
  */
 
 namespace Strategery\Infinitescroll\Block;
@@ -24,6 +24,7 @@ class Init extends \Magento\Framework\View\Element\Template
 
     /**
      * Init constructor.
+     *
      * @param \Magento\Framework\View\Element\Template\Context $context
      * @param \Magento\Catalog\Model\Session $catalogSession
      * @param \Magento\Framework\Registry $registry
@@ -59,10 +60,22 @@ class Init extends \Magento\Framework\View\Element\Template
 		return $this->getConfig('strategery_infinitescroll/' . $node);
 	}
 
+    /**
+     * @param $selector
+     * @return string
+     */
+	public function getSelector($selector)
+    {
+        return $this->getScrollConfig('selectors/'.$selector);
+    }
+
+    /**
+     * @return mixed
+     */
 	public function isEnabled()
 	{
 		$enabled = ($this->getScrollConfig('general/enabled') && $this->isEnabledInCurrentPage());
-		return $enabled;
+        return $enabled;
 	}
 
     /**
@@ -70,7 +83,7 @@ class Init extends \Magento\Framework\View\Element\Template
      */
 	public function isMemoryActive()
 	{
-		return $this->getScrollConfig('memory/enabled');
+        return $this->getScrollConfig('memory/enabled');
 	}
 
     /**
@@ -95,8 +108,11 @@ class Init extends \Magento\Framework\View\Element\Template
 			}
 		}
 		$controller = $this->getRequest()->getControllerName();
-		if ( $controller == "result"){ $where = "search"; }
-		else if ( $controller == "advanced") { $where = "advanced"; }
+		if ( $controller == "result"){
+		    $where = "search";
+		} else if ( $controller == "advanced") {
+		    $where = "advanced";
+		}
 		return $where;
 	}
 
@@ -136,7 +152,8 @@ class Init extends \Magento\Framework\View\Element\Template
 	public function getProductListMode()
 	{
 		// user mode
-        $currentMode = $this->getRequest()->getParam('product_list_mode')  ? $this->getRequest()->getParam('product_list_mode') : $this->catalogSession->getDisplayMode();
+        $paramProductListMode = $this->getRequest()->getParam('product_list_mode');
+        $currentMode = $paramProductListMode ? $paramProductListMode : $this->catalogSession->getDisplayMode();
         if ($currentMode) {
 			switch($currentMode){
 				case 'list':

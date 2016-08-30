@@ -16,6 +16,10 @@ With composer:
 
 ------------------
 ### Release Notes
+
+##### v0.2.1
+- Warnings fixes.
+
 ##### v0.2.0
 - Refactored Module for Magento 2 version.
 
