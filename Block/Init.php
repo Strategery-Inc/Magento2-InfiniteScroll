@@ -70,6 +70,15 @@ class Init extends \Magento\Framework\View\Element\Template
     }
 
     /**
+     * @param $design
+     * @return string
+     */
+    public function getDesign($design)
+    {
+        return $this->getScrollConfig('design/'.$design);
+    }
+
+    /**
      * @return mixed
      */
     public function isEnabled()
@@ -103,7 +112,7 @@ class Init extends \Magento\Framework\View\Element\Template
         $currentCategory = $this->getCurrentCategory();
         if ($currentCategory) {
             $where = "grid";
-            if($currentCategory->getIsAnchor()) {
+            if ($currentCategory->getIsAnchor()) {
                 $where = "layer";
             }
         }
@@ -165,7 +174,7 @@ class Init extends \Magento\Framework\View\Element\Template
             }
         } else {
             $defaultMode = $this->getConfig('catalog/frontend/list_mode');
-            switch($defaultMode) {
+            switch ($defaultMode) {
                 case 'grid-list':
                     $productListMode = 'grid';
                     break;
@@ -178,5 +187,4 @@ class Init extends \Magento\Framework\View\Element\Template
         }
         return $productListMode;
     }
-
 }
