@@ -12,6 +12,7 @@
  * @author Damian A. Pastorini (damian.pastorini@strategery.io)
  */
 define([
+    "jquery",
     "jqueryIas",
     "infinitescroll"
 ], function($, jqueryIas, infinitescroll) {
