@@ -18,7 +18,7 @@ define([
 ], function($, jqueryIas, infinitescroll) {
     "use strict";
     window.SgyIAS = {
-        debug: window.iasConfig.mode,
+        debug: window.iasConfig.debug,
         _log: function(object) {
             if(this.debug) {
                 console.log(object);
