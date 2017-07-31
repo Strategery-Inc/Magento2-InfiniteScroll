@@ -13,9 +13,8 @@
  */
 define([
     "jquery",
-    "jqueryIas",
-    "infinitescroll"
-], function($, jqueryIas, infinitescroll) {
+    "jqueryIas"
+], function($, jqueryIas) {
     "use strict";
     window.SgyIAS = {
         debug: window.iasConfig.debug,
@@ -61,16 +60,16 @@ define([
                 SgyIAS._log({extension: 'ias', config: config});
                 window.ias = $.ias(config);
                 SgyIAS._log({extension: 'paging'});
-                window.ias.extension(new IASPagingExtension());
+                window.ias.extension(new window.IASPagingExtension());
                 SgyIAS._log({extension: 'spinner'});
-                window.ias.extension(new IASSpinnerExtension(config.spinner));
+                window.ias.extension(new window.IASSpinnerExtension(config.spinner));
                 SgyIAS._log({extension: 'noneleft'});
-                window.ias.extension(new IASNoneLeftExtension(config.noneleft));
+                window.ias.extension(new window.IASNoneLeftExtension(config.noneleft));
                 SgyIAS._log({extension: 'trigger'});
-                window.ias.extension(new IASTriggerExtension(config.trigger));
+                window.ias.extension(new window.IASTriggerExtension(config.trigger));
                 if(window.iasConfig.memoryActive){
                     SgyIAS._log({extension: 'history'});
-                    window.ias.extension(new IASHistoryExtension(config.history));
+                    window.ias.extension(new window.IASHistoryExtension(config.history));
                 }
                 // debug events
                 window.ias.on('scroll', function(scrollOffset, scrollThreshold){
