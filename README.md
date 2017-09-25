@@ -17,6 +17,9 @@ With composer:
 ------------------
 ### Release Notes
 
+##### v0.2.2
+- Bug fix for debug mode - PR #12
+
 ##### v0.2.1
 - Warnings fixes.
 

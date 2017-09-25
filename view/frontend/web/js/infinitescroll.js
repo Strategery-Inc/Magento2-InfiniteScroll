@@ -12,12 +12,13 @@
  * @author Damian A. Pastorini (damian.pastorini@strategery.io)
  */
 define([
+    "jquery",
     "jqueryIas",
     "infinitescroll"
 ], function($, jqueryIas, infinitescroll) {
     "use strict";
     window.SgyIAS = {
-        debug: window.iasConfig.mode,
+        debug: window.iasConfig.debug,
         _log: function(object) {
             if(this.debug) {
                 console.log(object);
