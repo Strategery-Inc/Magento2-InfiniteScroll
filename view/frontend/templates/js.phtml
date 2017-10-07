@@ -49,8 +49,8 @@
             toolbarAction: '<?php echo $block->getDesign('hide_toolbar') ? 'hide' : 'show'; ?>',
             memoryActive: <?php echo $block->isMemoryActive() ? 'true' : 'false'; ?>
         };
-        require(['jquery', 'jqueryIas', 'infinitescroll'], function($){
-            $(window).load(function() {
+        require(['jquery', 'infinitescroll'], function($){
+            $(function($) {
                 // InfiniteScroll:
                 SgyIAS.init();
             });
