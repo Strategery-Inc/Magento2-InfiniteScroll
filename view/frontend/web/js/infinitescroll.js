@@ -87,7 +87,9 @@ define([
                 });
                 window.ias.on('rendered', function(items){
                     SgyIAS._log({eventName: 'render', items: items});
-                    $("form[data-role='tocart-form']").catalogAddToCart();
+                    if ( $("form[data-role='tocart-form']").length ) {
+                        $("form[data-role='tocart-form']").catalogAddToCart();
+                    }
                 });
                 window.ias.on('noneLeft', function(){
                     SgyIAS._log({eventName: 'noneLeft'});
