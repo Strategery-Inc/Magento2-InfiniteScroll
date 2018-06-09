@@ -14,7 +14,8 @@
 define([
     "jquery",
     "jqueryIas",
-    "infinitescroll"
+    "infinitescroll",
+    "catalogAddToCart"
 ], function($, jqueryIas, infinitescroll) {
     "use strict";
     window.SgyIAS = {
