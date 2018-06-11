@@ -19,8 +19,7 @@
         <strategery_infinitescroll>
             <general>
                 <enabled>1</enabled>
-                <debug>1</debug>
-                <jquery>1</jquery>
+                <debug>0</debug>
             </general>
             <instances>
                 <grid>1</grid>
