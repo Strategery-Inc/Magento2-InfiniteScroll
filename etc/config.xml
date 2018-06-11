@@ -40,7 +40,7 @@
             </selectors>
             <design>
                 <loading_img><![CDATA[]]></loading_img>
-                <loading_text><![CDATA[<em>Loading posts...</em>]]></loading_text>
+                <loading_text><![CDATA[<em>Loading products...</em>]]></loading_text>
                 <done_text><![CDATA[<em>Congratulations, you've reached the end of the internet.</em>]]></done_text>
                 <hide_toolbar>0</hide_toolbar>
                 <hide_pagination>1</hide_pagination>
