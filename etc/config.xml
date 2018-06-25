@@ -34,7 +34,7 @@
                 <items_grid>.products-grid</items_grid>
                 <items_list>.products-list</items_list>
                 <loading>.column.main</loading>
-                <toolbar>.toolbar</toolbar>
+                <toolbar>.toolbar:not(:first)</toolbar>
                 <pagination>.toolbar .limiter</pagination>
             </selectors>
             <design>
