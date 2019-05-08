@@ -35,7 +35,7 @@
                 <items_list>.products-list</items_list>
                 <loading>.column.main</loading>
                 <toolbar>.toolbar</toolbar>
-                <pagination>.toolbar .limiter</pagination>
+                <pagination>.toolbar .pages</pagination>
             </selectors>
             <design>
                 <loading_img><![CDATA[]]></loading_img>
