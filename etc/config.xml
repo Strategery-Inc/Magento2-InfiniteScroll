@@ -31,8 +31,8 @@
                 <content>.column.main</content>
                 <next>.next</next>
                 <previous>.previous</previous>
-                <items_grid>.products-grid</items_grid>
-                <items_list>.products-list</items_list>
+                <items_grid>.product-item</items_grid>
+                <items_list>.product-item</items_list>
                 <loading>.column.main</loading>
                 <toolbar>.toolbar</toolbar>
                 <pagination>.toolbar .pages</pagination>
