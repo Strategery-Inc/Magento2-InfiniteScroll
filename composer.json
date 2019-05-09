@@ -2,13 +2,13 @@
   "name": "strategery/magento2-infinitescroll",
   "description": "Magento2 InfiniteScroll module to load the next catalog page or results when scrolling down a page.",
   "type": "magento2-module",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "license": [
     "OSL-3.0",
     "AFL-3.0"
   ],
   "require": {
-    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0"
+    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0"
   },
   "autoload": {
     "files": [ "registration.php" ],
