@@ -17,7 +17,15 @@ var config = {
             infinitescroll: 'Strategery_Infinitescroll/js/infinitescroll'
         }
     },
+    paths: {
+        'infiniteAjaxScroll': 'Strategery_Infinitescroll/js/jquery-ias.min'
+    },
     shim : {
-        infinitescroll: ['jquery']
+        infinitescroll: {
+            deps: ['jquery']
+        },
+        infiniteAjaxScroll: {
+            deps: ['jquery']
+        }
     }
 };
