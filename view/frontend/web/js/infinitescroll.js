@@ -77,6 +77,9 @@ define([
                     SgyIAS._log({eventName: 'scroll', scrollOffset: scrollOffset, scrollThreshold: scrollThreshold});
                 });
                 window.ias.on('load', function(event){
+                    if (event.ajaxOptions) {
+                        event.ajaxOptions.cache = true;
+                    }
                     SgyIAS._log({eventName:'load', event: event});
                 });
                 window.ias.on('loaded', function(data, items){
