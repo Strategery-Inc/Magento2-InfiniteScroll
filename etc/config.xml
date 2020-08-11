@@ -40,7 +40,7 @@
             <design>
                 <loading_img><![CDATA[]]></loading_img>
                 <loading_text><![CDATA[<em>Loading products...</em>]]></loading_text>
-                <done_text><![CDATA[<em>Congratulations, you've reached the end of the internet.</em>]]></done_text>
+                <done_text></done_text>
                 <hide_toolbar>1</hide_toolbar>
                 <local_mode>0</local_mode>
                 <extra_scroll_px>150</extra_scroll_px>
