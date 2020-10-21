@@ -87,6 +87,12 @@ define([
                 });
                 window.ias.on('render', function(items){
                     SgyIAS._log({eventName: 'render', items: items});
+
+                    $(items).each(function() {
+                        var swatchRender = '<script type="text/x-magento-init">' + $(this).find('.x-magento-init').html() + '</script>';
+                        $(this).find('div[data-role^="swatch-option-"]').append(swatchRender);
+                    });
+
                 });
                 window.ias.on('rendered', function(items){
                     SgyIAS._log({eventName: 'render', items: items});
