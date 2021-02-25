@@ -18,5 +18,6 @@
     <module name="Strategery_Infinitescroll" setup_version="0.2.3"/>
     <sequence>
         <module name="Magento_Catalog"/>
+        <module name="Magento_Swatches"/>
     </sequence>
 </config>
