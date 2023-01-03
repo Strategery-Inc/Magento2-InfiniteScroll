@@ -19,5 +19,18 @@
         <referenceContainer name="content">
             <block class="Strategery\Infinitescroll\Block\Init" name="infinitescroll.init" template="Strategery_Infinitescroll::js.phtml"/>
         </referenceContainer>
+
+        <!-- @todo: Is possibile to add another block instead of rewrite? -->
+        <referenceBlock name="category.product.type.details.renderers">
+            <block class="Magento\Swatches\Block\Product\Renderer\Listing\Configurable"
+                   name="category.product.type.details.renderers.configurable" as="configurable"
+                   template="Strategery_Infinitescroll::product/listing/renderer.phtml"
+                   ifconfig="catalog/frontend/show_swatches_in_product_list">
+                <arguments>
+                    <argument name="configurable_view_model"
+                              xsi:type="object">Magento\Swatches\ViewModel\Product\Renderer\Configurable</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
     </body>
 </page>
